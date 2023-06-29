@@ -179,7 +179,7 @@ import os
 import numpy as np
 
 #Getting the names of the classes from the folder names
-train_dir = 'E:\Fish\Species\Training_Set'
+train_dir = 'path\to\species\dataset'
 class_names = sorted(os.listdir(train_dir))
 
 # Load the fish detection model
@@ -189,7 +189,7 @@ fish_detection_model = tf.keras.models.load_model('fish_detection.h5')
 fish_classification_model = tf.keras.models.load_model('fish_classification.h5')
 
 # Load and preprocess the input image
-img_path = 'fish.jpg'  # Replace with the actual path of your input image
+img_path = 'input_image.jpg'  # Replace with the actual path of your input image
 img = image.load_img(img_path, target_size=(224, 224))
 img = image.img_to_array(img)
 img = np.expand_dims(img, axis=0)
