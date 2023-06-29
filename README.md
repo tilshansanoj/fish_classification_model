@@ -1,2 +1,2 @@
-# fish_classification_model
+# Fish Classification Model
 Fish Classification AI model trained by using CNN
