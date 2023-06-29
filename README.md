@@ -3,7 +3,7 @@ Fish Classification AI model trained by using Tensorflow
 
 First of all, we need to train a model to detect fish from other animals
 
-#1. Fish Detection Model
+# Fish Detection Model
 
 In here we are going to do a binary classification by using a pre-trained model called MobileNet
 
