@@ -1,14 +1,15 @@
 # Fish Classification Model
-Fish Classification AI model trained by using Tensorflow
+Fish Classification AI model trained by using Tensorflow and Convolutional Neural Networks(CNN). This model has the ability to predict the fish species for the given input image.
 
 First of all, we need to train a model to detect fish from other animals
 
-# Fish Detection Model
+## 1.Fish Detection Model
 
-In here we are going to do a binary classification by using a pre-trained model called MobileNet
+Here we are going to train a binary classification model by using a pre-trained model **'MobileNet'**. Model have been trained by using **12000 Test Data and 68000 Training Data** for *two classes*, which is Fish vs Not-Fish
 
 
 ```python
+#importing libraries
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.applications.mobilenet import MobileNet
@@ -84,9 +85,10 @@ model.fit(
 # Save the trained model
 model.save('fish_detection.h5')
 ```
-# Fish Species Classification Model
-Now we can go ahead and train our Classification model
+## 2.Fish Species Classification Model
+We made our own custom model for the classification model and trained for *20 classes* using **6000 Test data and 34000 training dataset**.
 ```python
+#importing libraries
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import os
@@ -169,9 +171,11 @@ print('Test accuracy:', score[1])
 # Save the model 
 model.save('fish_classification.h5')
 ```
-By combining both models we are able predict if the input image has a fish or not, if yes then what is name of the fish species
+## 3. Final Program
+By combining both models we are able to predict if the input image has a fish or not, if yes then what is the name of the fish species
 
 ```python
+#importing libraries
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import Model
