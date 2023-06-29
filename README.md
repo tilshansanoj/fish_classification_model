@@ -72,7 +72,7 @@ model.compile(optimizer='adam',
 
 
 # Step 3: Model Training
-num_epochs = 7
+num_epochs = 7 #can change the number of epochs
 
 model.fit(
     train_generator,
@@ -85,7 +85,7 @@ model.fit(
 model.save('fish_detection.h5')
 ```
 # Fish Species Classification Model
-
+Now we can go ahead and train our Classification model
 ```python
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
@@ -156,7 +156,7 @@ model.compile(optimizer='adam',
 model.fit(
     train_data,
     steps_per_epoch=train_data.samples // batch_size,
-    epochs=10,
+    epochs=10,     #can change the number of epcohs
     validation_data=test_data,
     validation_steps=test_data.samples // batch_size
 )
