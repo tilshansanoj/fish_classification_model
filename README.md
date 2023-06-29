@@ -8,7 +8,7 @@ First of all, we need to train a model to detect fish from other animals
 In here we are going to do a binary classification by using a pre-trained model called MobileNet
 
 
-import tensorflow as tf
+<code>import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.applications.mobilenet import MobileNet
 from tensorflow.keras.layers import Dense, GlobalAveragePooling2D
@@ -81,5 +81,5 @@ model.fit(
     validation_steps=test_generator.samples // batch_size)
 
 # Save the trained model
-model.save('fish_detection.h5')
+model.save('fish_detection.h5')</code>
 
