@@ -22,5 +22,5 @@ Further Details about the model please refer to [Fish Classification Model](./fi
 - [Tilshan Amarasekara](https://github.com/tilshansanoj)
 - [Thishan Tharuka](https://github.com/ThishanTharuka)
 - [Lasitha Ranathunga](https://github.com/LasithaRanathunga)
-
+- [Bulitha Kawushika](https://github.com/bulithakawushika)
 
